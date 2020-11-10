@@ -6,6 +6,7 @@ FROM node:12.18.4
 COPY . /usr/src/app2
 COPY package.json /usr/src/app2
 
+COPY . /usercode/vanilla
 
 RUN cd /usr/src/app2 && npm cache verify && npm install 
 CMD cd /usr/src/app2 && npm run start
