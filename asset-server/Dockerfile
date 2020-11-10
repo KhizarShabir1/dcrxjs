@@ -8,7 +8,7 @@ COPY package.json /usr/src/app
 
 
 
-
+COPY . /usercode/asset-server
 
 
 RUN cd /usr/src/app && npm install 
