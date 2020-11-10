@@ -1,0 +1,36 @@
+
+
+FROM node:12.18.4
+LABEL maintainer="educative@educative.io"
+
+WORKDIR /app
+
+COPY . /app
+
+RUN cd /app/asset-server/ && npm install && npm start
+#CMD ["npm", "start"]
+
+#RUN cd /app/vanilla/ && npm install 
+
+
+#CMD ["cd", "/app/asset-server/"]
+
+#CMD ["npm","install"]
+
+#CMD ["cd", "/app/vanilla/"]
+
+#CMD ["npm","install"]
+#CMD ["npm","start"]
+
+
+
+
+#EXPOSE 8080
+#CMD ["cd","creatingObservables/"]
+
+
+#CMD ["npm", "start"]
+
+
+
+
